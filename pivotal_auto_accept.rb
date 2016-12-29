@@ -35,8 +35,6 @@ stories.each { |story|
   occurred = newest_transition.occurred_at.to_date
 
   if occurred < (Date.today() - auto_accept_after_days)
-    puts '* ' + story.name + ' ...delivered over a week ago'
-
     # mark story as accepted
     story.current_state = accepted_state
 
@@ -46,7 +44,7 @@ stories.each { |story|
 
     story.save
 
-    puts '     ...marked as accepted'
+    puts story.name + '...marked as accepted'
     updated_at_least_one_story = true
   end
 }

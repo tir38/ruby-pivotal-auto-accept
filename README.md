@@ -14,6 +14,7 @@ Any story (feature or bug) that is currently in the delivered state, that has be
 
 ### TODO
 * remove local git submodule when `tracker_api` is updated.
+* update script to handle multiple projects
 
 
 
