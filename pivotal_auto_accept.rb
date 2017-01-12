@@ -20,7 +20,7 @@ stories = project.stories(with_state: :delivered) # Get all delivered stories
 puts 'Found ' + stories.size.to_s + ' delivered stories in ' + project.name + '.'
 
 stories.each { |story|
-  story_transitions = story.story_transitions.reverse
+  story_transitions = story.transitions.reverse
 
   newest_transition = story_transitions.first
 
